@@ -41,6 +41,7 @@ class SynonymsWidget extends WidgetBase {
       '#type' => 'textarea',
       '#title' => $this->t('Synonyms'),
       '#default_value' => implode("\n", $value),
+      '#description' => $this->t('Enter one synonym per line.'),
     ];
     return $widget;
   }
